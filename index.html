@@ -3,17 +3,118 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="./tailwind_style.css">
+    <meta name="viewport" ent="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="tailwind_style.css"> -->
 
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            /* box-sizing: content-box; */
+        }
+    </style>
     <title>Document</title>
 </head>
 
 <body>
-    <h1 class="text-red-300 font-bold text-5xl">
-        Welcome to tailwind practice!
-    </h1>
+
+    <head>
+        <nav class="">
+            <div class="logo flex">
+                <img src="./icons/logo_icon.png" alt="logo-icon" class="logo-svg w-[37px] h-[26px]">
+                <p class="logo-text text-black text-[16px] font-bold"><span class=" text-[#A4BC46]">GENZ</span> Fashion
+                </p>
+            </div>
+
+            <!-- DEBUGGING -->
+            <div class="nav-item md:hidden bg-blue-500 text-white p-2">
+                3 dot
+            </div>
+
+            <div class="md:hidden">3 dot</div>
+            <div class="nav-item ">
+                <ul>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+            </div>
+            <!-- DEBUGGING -->
+
+        </nav>
+        <div class="hero-area">
+            <div class="hero">
+                <div class="text">
+                    <h1 class="hero-head"><span>Be the Genzs</span>
+                        of Winter</h1>
+                    <p class="hero-para">Lorem Ipsum is simply dummy text of the printing
+                        and typesetting industry.</p>
+                </div>
+                <button>BUY NOW</button>
+                <div class="banner"></div>
+            </div>
+        </div>
+    </head>
+
+    <div class="wmn-area">
+        <div class="wmn">
+            <h2 class="wmn-head">WOMAN JACKET</h2>
+            <div class="wmn-card">
+                <div class="card">
+                    <div class="card-img"></div>
+                    <h3 class="card-title">Yellow Coat Jacket</h3>
+                    <p class="card-para">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="price-btn">
+                        <p class="price">$234</p>
+                        <button>BUY NOW</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="men-area">
+        <div class="men">
+            <h2 class="men-head">WOMAN JACKET</h2>
+
+            <div class="men-card">
+                <div class="card">
+                    <div class="card-img"></div>
+                    <h3 class="card-title">Yellow Coat Jacket</h3>
+                    <p class="card-para">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="price-btn">
+                        <p class="price">$234</p>
+                        <button>BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="end-area">
+        <div class="end">
+            <div class="end-list">
+                <div class="list-item"></div>
+            </div>
+            <div class="end-banner"></div>
+        </div>
+    </div>
 
 </body>
 
