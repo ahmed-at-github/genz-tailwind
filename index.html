@@ -3,22 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" ent="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Tailwind CSS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link rel="stylesheet" href="tailwind_style.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <!-- CSS  -->
     <style>
         * {
-            margin: 0;
-            padding: 0;
-            border: 0;
             font-family: "Montserrat", sans-serif;
             font-style: normal;
             /* box-sizing: content-box; */
@@ -30,28 +29,24 @@
 <body>
 
     <head>
-        <nav class="">
+        <nav class="flex items-center justify-between">
             <div class="logo flex">
                 <img src="./icons/logo_icon.png" alt="logo-icon" class="logo-svg w-[37px] h-[26px]">
                 <p class="logo-text text-black text-[16px] font-bold"><span class=" text-[#A4BC46]">GENZ</span> Fashion
                 </p>
             </div>
 
-            <!-- DEBUGGING -->
             <div class="nav-item md:hidden bg-blue-500 text-white p-2">
                 3 dot
             </div>
-
-            <div class="md:hidden">3 dot</div>
-            <div class="nav-item ">
-                <ul>
+            <div class="nav-item hidden md:block  ">
+                <ul class="flex gap-5">
                     <li>Home</li>
                     <li>Home</li>
                     <li>Home</li>
                     <li>Home</li>
                 </ul>
             </div>
-            <!-- DEBUGGING -->
 
         </nav>
         <div class="hero-area">
@@ -68,7 +63,7 @@
         </div>
     </head>
 
-    <div class="wmn-area">
+    <!-- <div class="wmn-area">
         <div class="wmn">
             <h2 class="wmn-head">WOMAN JACKET</h2>
             <div class="wmn-card">
@@ -114,7 +109,7 @@
             </div>
             <div class="end-banner"></div>
         </div>
-    </div>
+    </div> -->
 
 </body>
 
