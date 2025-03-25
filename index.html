@@ -12,8 +12,14 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- CSS  -->
     <style>
@@ -22,22 +28,41 @@
             font-style: normal;
             /* box-sizing: content-box; */
         }
+
+        .font-bebas-neue {
+            font-family: "Bebas Neue", sans-serif;
+
+        }
+
+        .font-roboto {
+            font-family: "Roboto", sans-serif;
+
+        }
+
+        .primary-btn {
+            width: 170px;
+            height: 60px;
+            border-radius: 10px;
+            background: linear-gradient(180deg, #A4BC46 0%, #85A019 100%);
+        }
     </style>
     <title>Document</title>
 </head>
 
 <body>
 
-    <head>
-        <nav class="flex items-center justify-between">
+    <header class="bg-[#FFFBF0] px-5 py-10 pt-7">
+
+        <nav class="flex  justify-between items-center">
             <div class="logo flex">
                 <img src="./icons/logo_icon.png" alt="logo-icon" class="logo-svg w-[37px] h-[26px]">
-                <p class="logo-text text-black text-[16px] font-bold"><span class=" text-[#A4BC46]">GENZ</span> Fashion
+                <p class="logo-text text-black text-[16px] font-bold"><span class=" text-[#A4BC46]">GENZ</span>
+                    Fashion
                 </p>
             </div>
 
-            <div class="nav-item md:hidden bg-blue-500 text-white p-2">
-                3 dot
+            <div class="nav-item md:hidden">
+                <i class="fa-solid fa-bars"></i>
             </div>
             <div class="nav-item hidden md:block  ">
                 <ul class="flex gap-5">
@@ -47,21 +72,26 @@
                     <li>Home</li>
                 </ul>
             </div>
-
         </nav>
+
+
         <div class="hero-area">
             <div class="hero">
-                <div class="text">
-                    <h1 class="hero-head"><span>Be the Genzs</span>
+                <div class="text py-[50px] pr-8">
+                    <h1 class="hero-head font-bebas-neue text-6xl pb-4"><span class="font-bebas-neue text-[#FABE4C]">Be the
+                            Genzs</span>
                         of Winter</h1>
-                    <p class="hero-para">Lorem Ipsum is simply dummy text of the printing
+                    <p class="hero-para font-roboto text-base">Lorem Ipsum is simply dummy text of the printing
                         and typesetting industry.</p>
                 </div>
-                <button>BUY NOW</button>
-                <div class="banner"></div>
+                <button class="primary-btn font-roboto text-white font-medium flex gap-2 justify-center items-center"><i
+                        class="fa-solid fa-cart-shopping"></i>BUY NOW</button>
+                <div class="banner pt-[100px]">
+                    <img src="./images/model.png" alt="model" class="size-full">
+                </div>
             </div>
         </div>
-    </head>
+    </header>
 
     <!-- <div class="wmn-area">
         <div class="wmn">
